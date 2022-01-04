@@ -1,0 +1,27 @@
+@use '../../sass/mixins';
+
+.color-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .color-title {
+    padding: 0.8rem 2rem;
+    background-color: var(--colorBlack);
+    color: var(--primaryBackColor);
+    border-radius: 10px;
+    font-family: var(--titleFont);
+    font-size: 2.9rem;
+    margin-bottom: 3rem;
+
+    @include mixins.mediaUp(md) {
+      font-size: 6rem;
+    }
+
+    @include mixins.mediaUp(lg) {
+      font-size: 9rem;
+    }
+  }
+}
