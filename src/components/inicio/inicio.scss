@@ -13,15 +13,15 @@
     color: var(--primaryBackColor);
     border-radius: 10px;
     font-family: var(--titleFont);
-    font-size: 2.9rem;
-    margin-bottom: 3rem;
+    font-size: 2.4rem;
+    margin-bottom: 4rem;
 
     @include mixins.mediaUp(md) {
-      font-size: 6rem;
+      font-size: 4rem;
     }
 
     @include mixins.mediaUp(lg) {
-      font-size: 9rem;
+      font-size: 5rem;
     }
   }
 }
